@@ -1,0 +1,8 @@
+select
+  each flight, i in flights
+    option(value=i) Flight #{flight.flightNumber}
+
+
+ul
+  each val in [flights]
+    li= val
